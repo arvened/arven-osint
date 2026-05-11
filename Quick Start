@@ -1,0 +1,9 @@
+from arven_osint import ArvenOSINT
+import asyncio
+
+async def main():
+    osint = ArvenOSINT()
+    result = await osint.analyze_company("example.com")
+    print(result.dict())
+
+asyncio.run(main())
